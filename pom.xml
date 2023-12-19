@@ -24,11 +24,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 72a9673eafe656f916b1973f049892655bffb78d
   <build>
     <plugins>
       <plugin>
