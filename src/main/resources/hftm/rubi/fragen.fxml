@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Button?>
 <?import javafx.geometry.Insets?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hftm.rubi.FragenController">
+<AnchorPane prefHeight="345.0" prefWidth="561.0" style="-fx-background-color: white; -fx-background-radius: 32px; -fx-border-radius: 32px;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hftm.rubi.FragenController">
    <children>
-      <Label text="Wähle eine Kategorie für den Quiz!" />
-      <Button fx:id="Kategorie1" text="Kategorie1" onAction="#switchToSecondary"></Button>
-      <Button fx:id="Kategorie2" text="Kategorie2" onAction="#switchToSecondary"></Button>
-      <Button fx:id="Kategorie3" text="Kategorie3" onAction="#switchToSecondary"></Button>
-      <Button fx:id="Kategorie4" text="Kategorie4" onAction="#switchToSecondary"></Button>
-      <Button fx:id="primaryButton" text="Quiz" onAction="#switchToSecondary"/>
-      <Button fx:id="exitButton" text="Beenden" onAction="#handleExitButtonAction"/>
+      <Label layoutX="150.0" layoutY="81" text="Wähle eine Kategorie für den Quiz!" />
+      <Button fx:id="Kategorie1" layoutX="50.0" layoutY="200.0" text="Kategorie1" onAction="#switchToSecondary" style="-fx-background-color: green; -fx-background-radius: 32px;; -fx-border-radius: 32px;" textFill="WHITE"></Button>
+      <Button fx:id="Kategorie2" layoutX="100.0" layoutY="250.0" text="Kategorie2" onAction="#switchToSecondary" style="-fx-background-color: green; -fx-background-radius: 32px;; -fx-border-radius: 32px;" textFill="WHITE"></Button>
+      <Button fx:id="Kategorie3" layoutX="150.0" layoutY="200.0" text="Kategorie3" onAction="#switchToSecondary" style="-fx-background-color: green; -fx-background-radius: 32px;; -fx-border-radius: 32px;" textFill="WHITE"></Button>
+      <Button fx:id="Kategorie4" layoutX="200.0" layoutY="250.0" text="Kategorie4" onAction="#switchToSecondary" style="-fx-background-color: green; -fx-background-radius: 32px;; -fx-border-radius: 32px;" textFill="WHITE"></Button>
+      <Button fx:id="exitButton" layoutX="480.0" layoutY="300.0" text="Beenden" onAction="#handleExitButtonAction" style="-fx-background-color: red; -fx-background-radius: 32px;; -fx-border-radius: 32px;" textFill="WHITE"/>
    </children>
-   <padding>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-   </padding>
-</VBox>
+</AnchorPane>
