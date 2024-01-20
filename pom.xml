@@ -41,7 +41,7 @@
                         <!-- Usage: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>hftm.rubi.QuizApp</mainClass>
+                            <mainClass>hftm.rubi.App</mainClass>
                         </configuration>
                     </execution>
                 </executions>
