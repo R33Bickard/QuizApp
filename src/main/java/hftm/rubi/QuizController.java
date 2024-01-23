@@ -10,20 +10,26 @@ public class QuizController {
     @FXML
     private Button exitButton;
     @FXML
-    private Button startQuiz;
+    private Button Auswahl1;
+    @FXML
+    private Button Auswahl2;
+    @FXML
+    private Button Auswahl3;
+    @FXML
+    private Button Auswahl4;
 
+
+    @FXML
+    private void switchToPrimary() throws IOException {
+        App.setRoot("fragen");
+    }
     @FXML
     private void switchToThird() throws IOException {
         App.setRoot("ergebnis");
     }
 
     @FXML
-    private void start() throws IOException {
-        App.setRoot("fragen");
-    }
-    @FXML
     private void handleExitButtonAction() {
-        // Programm beenden
         Stage stage = (Stage) exitButton.getScene().getWindow();
         stage.close();
     }

@@ -6,26 +6,68 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hftm.rubi.QuizController">
-    <children>
-        <Label text="Starte deinen Quiz" />
-        <Button fx:id="startQuiz" onAction="#start" text="Start" />
-      <AnchorPane prefHeight="200.0" prefWidth="200.0">
-         <children>
-            <ButtonBar prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
-               <buttons>
-                    <Button fx:id="secondaryButton" onAction="#switchToThird" text="Ergebnisse" />
-                    <Button fx:id="exitButton" onAction="#handleExitButtonAction" text="Beenden" />
-               </buttons>
-            </ButtonBar>
-         </children>
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-      </AnchorPane>
-    </children>
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
-</VBox>
+
+<AnchorPane prefHeight="400" prefWidth="600"
+   style="-fx-background-color: white; -fx-background-radius: 32px; -fx-border-radius: 32px;"
+   xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+   fx:controller="hftm.rubi.QuizController">
+   <children>
+      <Label text="Starte deinen Quiz" layoutX="170.0" layoutY="50">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="Auswahl1" layoutX="20.0" layoutY="150.0" text="Auswahl1"
+         onAction="#switchToPrimary"
+         style="-fx-background-color: green; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
+         textFill="WHITE">
+         <font>
+            <Font name="Arial" size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="Auswahl2" layoutX="330.0" layoutY="150.0" text="Auswahl2"
+         onAction="#switchToPrimary"
+         style="-fx-background-color: green; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
+         textFill="WHITE">
+         <font>
+            <Font name="Arial" size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="Auswahl3" layoutX="20.0" layoutY="250.0" text="Auswahl3"
+         onAction="#switchToPrimary"
+         style="-fx-background-color: green; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
+         textFill="WHITE">
+         <font>
+            <Font name="Arial" size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="Auswahl4" layoutX="330.0" layoutY="250.0" text="Auswahl4"
+         onAction="#switchToPrimary"
+         style="-fx-background-color: green; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
+         textFill="WHITE">
+         <font>
+            <Font name="Arial" size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="ErgebnisButton" layoutX="310.0" layoutY="350.0" text="Ergebnisse"
+         onAction="#switchToThird"
+         style="-fx-background-color: blue; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
+         textFill="WHITE">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="460.0" layoutY="350.0" text="Beenden"
+         onAction="#handleExitButtonAction"
+         style="-fx-background-color: red; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
+         textFill="WHITE">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+
+
+   </children>
+</AnchorPane>
