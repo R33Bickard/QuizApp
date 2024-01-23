@@ -18,7 +18,7 @@
         </Label>
         <Button fx:id="thirdButton" layoutX="240.0" layoutY="350.0" text="Zurück zum Anfang"
             onAction="#switchToPrimary"
-            style="-fx-background-color: green; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
+            style="-fx-background-color: #ADFF2F; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
             textFill="WHITE">
             <font>
                 <Font name="Arial" size="20.0" />
@@ -26,7 +26,7 @@
         </Button>
         <Button fx:id="exitButton" layoutX="460.0" layoutY="350.0" text="Beenden"
          onAction="#handleExitButtonAction"
-         style="-fx-background-color: red; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
+         style="-fx-background-color:#B22222; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
          textFill="WHITE" >
          <font>
             <Font name="Arial" size="20.0"/>

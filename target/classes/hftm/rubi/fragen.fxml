@@ -17,7 +17,7 @@
       </Label>
       <Button fx:id="Kategorie1" layoutX="20.0" layoutY="150.0" text="Kategorie1"
          onAction="#switchToSecondary"
-         style="-fx-background-color: green; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
+         style="-fx-background-color: #6495ED; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
          textFill="WHITE">
       <font>
          <Font name="Arial" size="40.0"/>
@@ -25,7 +25,7 @@
       </Button>
       <Button fx:id="Kategorie2" layoutX="330.0" layoutY="150.0" text="Kategorie2"
          onAction="#switchToSecondary"
-         style="-fx-background-color: green; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
+         style="-fx-background-color: #6495ED; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
          textFill="WHITE">
          <font>
             <Font name="Arial" size="40.0"/>
@@ -33,7 +33,7 @@
       </Button>
       <Button fx:id="Kategorie3" layoutX="20.0" layoutY="250.0" text="Kategorie3"
          onAction="#switchToSecondary"
-         style="-fx-background-color: green; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
+         style="-fx-background-color: #6495ED; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
          textFill="WHITE">
          <font>
             <Font name="Arial" size="40.0"/>
@@ -41,7 +41,7 @@
       </Button>
       <Button fx:id="Kategorie4" layoutX="330.0" layoutY="250.0" text="Kategorie4"
          onAction="#switchToSecondary"
-         style="-fx-background-color: green; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
+         style="-fx-background-color: #6495ED; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
          textFill="WHITE">
          <font>
             <Font name="Arial" size="40.0"/>
@@ -49,7 +49,7 @@
       </Button>
       <Button fx:id="exitButton" layoutX="460.0" layoutY="350.0" text="Beenden"
          onAction="#handleExitButtonAction"
-         style="-fx-background-color: red; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
+         style="-fx-background-color:#B22222; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
          textFill="WHITE" >
          <font>
             <Font name="Arial" size="20.0"/>
