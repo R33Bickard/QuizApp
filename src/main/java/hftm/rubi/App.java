@@ -13,14 +13,22 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
+    private static Stage primaryStage;
+
 
     @Override
     public void start(Stage stage) throws IOException {
+        primaryStage = stage; // Speichere die primäre Bühne
         scene = new Scene(loadFXML("fragen"));
         stage.setScene(scene);
         stage.initStyle(StageStyle.TRANSPARENT);
         scene.setFill(Color.TRANSPARENT);
         stage.show();
+    }
+
+    // Statische Methode, um die primäre Bühne abzurufen
+    public static Stage getPrimaryStage() {
+        return primaryStage;
     }
 
     static void setRoot(String fxml) throws IOException {
