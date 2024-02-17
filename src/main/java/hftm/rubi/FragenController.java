@@ -1,5 +1,6 @@
 package hftm.rubi;
 
+<<<<<<< HEAD
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -65,20 +66,63 @@ public class FragenController {
                 App.getPrimaryStage().setScene(new Scene(root));
             } catch (IOException e) {
                 e.printStackTrace();
+=======
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
+import java.io.IOException;
+import java.util.List;
+
+public class FragenController {
+
+    @FXML
+    private Button exitButton;
+    @FXML
+    private Button Kategorie1;
+    @FXML
+    private Button Kategorie2;
+    @FXML
+    private Button Kategorie3;
+    @FXML
+    private Button Kategorie4;
+
+    private QuizDaten quizDaten = new QuizDaten(); // Instanz von QuizDaten
+
+    @FXML
+    private void initialize() {
+        List<Kategorie> kategorien = quizDaten.getKategorien();
+        Button[] kategorieButtons = {Kategorie1, Kategorie2, Kategorie3, Kategorie4};
+
+        for (int i = 0; i < kategorieButtons.length; i++) {
+            if (i < kategorien.size()) {
+                kategorieButtons[i].setText(kategorien.get(i).getName());
+                Kategorie ausgewaehlteKategorie = kategorien.get(i);
+                kategorieButtons[i].setOnAction(event -> waehleKategorie(ausgewaehlteKategorie));
+            } else {
+                kategorieButtons[i].setVisible(false); // Verstecke den Button, wenn keine Kategorie vorhanden ist
+>>>>>>> c165979 (Kategorieauswahl und Fragenausgabe implementiert)
             }
         }
     }
 
+<<<<<<< HEAD
     // Alternativer Weg, um zur Quiz-Ansicht zu wechseln, derzeit nicht im Einsatz.
     @FXML
     private void switchToSecondary(ActionEvent event) {
         try {
             App.setRoot("quiz");
+=======
+    private void waehleKategorie(Kategorie kategorie) {
+        App.setAusgewaehlteKategorie(kategorie);
+        try {
+            switchToSecondary();
+>>>>>>> c165979 (Kategorieauswahl und Fragenausgabe implementiert)
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
+<<<<<<< HEAD
     // Behandelt Klick-Events auf Kategorie-Buttons, eine Alternative zu `handleKategorieButtonAction` ohne Kategorie-Zuweisung.
     @FXML
     private void handleCategoryButtonClick(ActionEvent event) {
@@ -91,6 +135,16 @@ public class FragenController {
     // Beendet die Anwendung, wenn der Exit-Button geklickt wird.
     @FXML
     private void handleExitButtonAction() {
+=======
+    @FXML
+    private void switchToSecondary() throws IOException {
+        App.setRoot("quiz");
+    }
+
+    @FXML
+    private void handleExitButtonAction() {
+        // Programm beenden
+>>>>>>> c165979 (Kategorieauswahl und Fragenausgabe implementiert)
         Stage stage = (Stage) exitButton.getScene().getWindow();
         stage.close();
     }

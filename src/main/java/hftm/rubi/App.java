@@ -7,18 +7,15 @@ import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-
 import java.io.IOException;
 
 public class App extends Application {
 
     private static Scene scene;
-    private static Stage primaryStage;
-
+    private static Kategorie ausgewaehlteKategorie; // Hinzugefügte Variable für die ausgewählte Kategorie
 
     @Override
     public void start(Stage stage) throws IOException {
-        primaryStage = stage; // Speichere die primäre Bühne
         scene = new Scene(loadFXML("fragen"));
         stage.setScene(scene);
         stage.initStyle(StageStyle.TRANSPARENT);
@@ -26,13 +23,14 @@ public class App extends Application {
         stage.show();
     }
 
-    // Statische Methode, um die primäre Bühne abzurufen
-    public static Stage getPrimaryStage() {
-        return primaryStage;
-    }
-
     static void setRoot(String fxml) throws IOException {
-        scene.setRoot(loadFXML(fxml));
+        FXMLLoader loader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
+        scene.setRoot(loader.load());
+        if ("quiz".equals(fxml)) {
+            // Zugriff auf den QuizController und Übertragung der ausgewählten Kategorie
+            QuizController controller = loader.getController();
+            controller.setKategorie(ausgewaehlteKategorie);
+        }
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
@@ -40,8 +38,11 @@ public class App extends Application {
         return fxmlLoader.load();
     }
 
+    public static void setAusgewaehlteKategorie(Kategorie kategorie) {
+        ausgewaehlteKategorie = kategorie;
+    }
+
     public static void main(String[] args) {
         launch();
     }
-
 }

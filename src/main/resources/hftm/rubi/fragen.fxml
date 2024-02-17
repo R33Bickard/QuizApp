@@ -15,7 +15,11 @@
             <Font name="Arial" size="30.0"/>
          </font>
       </Label>
+<<<<<<< HEAD
       <Button fx:id="categoryButton1" layoutX="20.0" layoutY="150.0" text="Kategorie1"
+=======
+      <Button fx:id="Kategorie1" layoutX="20.0" layoutY="150.0" text="Kategorie1"
+>>>>>>> c165979 (Kategorieauswahl und Fragenausgabe implementiert)
          onAction="#switchToSecondary"
          style="-fx-background-color: #6495ED; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
          textFill="WHITE">
@@ -23,7 +27,11 @@
          <Font name="Arial" size="40.0"/>
       </font>
       </Button>
+<<<<<<< HEAD
       <Button fx:id="categoryButton2" layoutX="330.0" layoutY="150.0" text="Kategorie2"
+=======
+      <Button fx:id="Kategorie2" layoutX="330.0" layoutY="150.0" text="Kategorie2"
+>>>>>>> c165979 (Kategorieauswahl und Fragenausgabe implementiert)
          onAction="#switchToSecondary"
          style="-fx-background-color: #6495ED; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
          textFill="WHITE">
@@ -31,7 +39,11 @@
             <Font name="Arial" size="40.0"/>
          </font>
       </Button>
+<<<<<<< HEAD
       <Button fx:id="categoryButton3" layoutX="20.0" layoutY="250.0" text="Kategorie3"
+=======
+      <Button fx:id="Kategorie3" layoutX="20.0" layoutY="250.0" text="Kategorie3"
+>>>>>>> c165979 (Kategorieauswahl und Fragenausgabe implementiert)
          onAction="#switchToSecondary"
          style="-fx-background-color: #6495ED; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
          textFill="WHITE">
@@ -39,7 +51,11 @@
             <Font name="Arial" size="40.0"/>
          </font>
       </Button>
+<<<<<<< HEAD
       <Button fx:id="categoryButton4" layoutX="330.0" layoutY="250.0" text="Kategorie4"
+=======
+      <Button fx:id="Kategorie4" layoutX="330.0" layoutY="250.0" text="Kategorie4"
+>>>>>>> c165979 (Kategorieauswahl und Fragenausgabe implementiert)
          onAction="#switchToSecondary"
          style="-fx-background-color: #6495ED; -fx-background-radius: 32px;; -fx-border-radius: 32px;"
          textFill="WHITE">

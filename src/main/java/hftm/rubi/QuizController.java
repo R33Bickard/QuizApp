@@ -1,18 +1,25 @@
 package hftm.rubi;
 
+<<<<<<< HEAD
 import javafx.event.ActionEvent;
+=======
+>>>>>>> c165979 (Kategorieauswahl und Fragenausgabe implementiert)
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+<<<<<<< HEAD
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 
+=======
+>>>>>>> c165979 (Kategorieauswahl und Fragenausgabe implementiert)
 import java.io.IOException;
 import java.util.List;
 
 public class QuizController {
 
+<<<<<<< HEAD
     // Referenzen auf UI-Elemente, definiert in der zugehörigen FXML-Datei.
     @FXML
     private Label questionLabel; // Zeigt die aktuelle Quizfrage an.
@@ -131,11 +138,83 @@ public class QuizController {
     }
     
     // Beendet das Quiz und schließt das Fenster.
+=======
+    @FXML
+    private Label frageLabel;
+    @FXML
+    private Button exitButton;
+    @FXML
+    private Button Auswahl1;
+    @FXML
+    private Button Auswahl2;
+    @FXML
+    private Button Auswahl3;
+    @FXML
+    private Button Auswahl4;
+    @FXML
+    private Button ErgebnisButton;
+
+    private Kategorie ausgewaehlteKategorie;
+    private List<Frage> fragen;
+    private int aktuelleFrageIndex = 0;
+
+    public void setKategorie(Kategorie kategorie) {
+        this.ausgewaehlteKategorie = kategorie;
+        this.fragen = kategorie.getFragen();
+        zeigeFrage();
+    }
+
+    private void zeigeFrage() {
+        if (aktuelleFrageIndex < fragen.size()) {
+            Frage aktuelleFrage = fragen.get(aktuelleFrageIndex);
+            frageLabel.setText(aktuelleFrage.getFragetext());
+            List<String> antworten = aktuelleFrage.getAntwortmoeglichkeiten();
+            Button[] antwortButtons = {Auswahl1, Auswahl2, Auswahl3, Auswahl4};
+
+            for (int i = 0; i < antwortButtons.length; i++) {
+                if (i < antworten.size()) {
+                    antwortButtons[i].setText(antworten.get(i));
+                    antwortButtons[i].setVisible(true);
+                } else {
+                    antwortButtons[i].setVisible(false);
+                }
+            }
+        }
+    }
+
+    @FXML
+    private void antwortAuswaehlen() {
+        // Logik, um die ausgewählte Antwort zu verarbeiten
+        aktuelleFrageIndex++;
+        if (aktuelleFrageIndex < fragen.size()) {
+            zeigeFrage();
+        } else {
+            // Alle Fragen beantwortet, wechsle zur Ergebnisseite
+            try {
+                switchToThird();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @FXML
+    private void switchToPrimary() throws IOException {
+        App.setRoot("fragen");
+    }
+
+    @FXML
+    private void switchToThird() throws IOException {
+        App.setRoot("ergebnis");
+    }
+
+>>>>>>> c165979 (Kategorieauswahl und Fragenausgabe implementiert)
     @FXML
     private void handleExitButtonAction() {
         Stage stage = (Stage) exitButton.getScene().getWindow();
         stage.close();
     }
+<<<<<<< HEAD
 
     // Zeigt eine Zusammenfassung der Quizergebnisse in einem Dialogfenster an.
     private void showResults() {
@@ -154,3 +233,6 @@ public class QuizController {
         answerButton4.setDisable(true);
     }
 }
+=======
+}
+>>>>>>> c165979 (Kategorieauswahl und Fragenausgabe implementiert)
