@@ -18,6 +18,8 @@ public class LoginController {
   
     @FXML
     private void switchToPrimary() throws IOException {
+        App.setBenutzerName(namebox.getText());
         App.setRoot("fragen");
     }
+    
 }

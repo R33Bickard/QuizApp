@@ -79,8 +79,13 @@ public class QuizController {
     }
 
     private void switchToErgebnis() throws IOException {
+        // Speichere Ergebnisse bevor zur Ergebnisseite gewechselt wird
+        App.speichereErgebnisse(App.getBenutzerName(), korrekteAntwortenZaehler);
+    
+        // Wechsel zur Ergebnisseite
         App.setRoot("ergebnis", korrekteAntwortenZaehler, fragen.size());
-    }    
+    }
+    
 
     @FXML
     private void switchToPrimary() throws IOException {

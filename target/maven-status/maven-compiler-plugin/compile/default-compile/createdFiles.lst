@@ -1,9 +1,9 @@
 hftm\rubi\Frage.class
-hftm\rubi\QuizDatenTest.class
 hftm\rubi\QuizDaten.class
 hftm\rubi\ErgebnisController.class
 hftm\rubi\Kategorie.class
 module-info.class
 hftm\rubi\QuizController.class
+hftm\rubi\LoginController.class
 hftm\rubi\App.class
 hftm\rubi\FragenController.class

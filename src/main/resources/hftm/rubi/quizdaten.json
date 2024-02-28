@@ -1,142 +1,422 @@
 [
-    {
-      "Name": "Java",
-      "Fragen": [
-        {
-          "Frage": "Was ist Java?",
-          "Antworten": [
-            "Eine Insel",
-            "Eine Programmiersprache",
-            "Ein Getränk",
-            "Ein Betriebssystem"
-          ],
-          "KorrekteAntwort": 1
-        },
-        {
-          "Frage": "Was bedeutet OOP?",
-          "Antworten": [
-            "Objektorientierte Programmierung",
-            "Offen Organisierte Projekte",
-            "Optionale Operationsprozedur",
-            "Offizielle Öffentliche Partnerschaft"
-          ],
-          "KorrekteAntwort": 0
-        },
-        {
-          "Frage": "Was ist eine Ausnahme in Java?",
-          "Antworten": [
-            "Ein Fehler beim Kompilieren",
-            "Ein Laufzeitfehler",
-            "Ein Syntaxfehler",
-            "Ein Kommentar"
-          ],
-          "KorrekteAntwort": 1
-        }
-      ]
-    },
-    {
-      "Name": "Allgemeinbildung",
-      "Fragen": [
-        {
-          "Frage": "Wer schrieb 'Faust'?",
-          "Antworten": [
-            "Friedrich Schiller",
-            "Johann Wolfgang von Goethe",
-            "Heinrich Heine",
-            "Thomas Mann"
-          ],
-          "KorrekteAntwort": 1
-        },
-        {
-          "Frage": "Wie viele Bundesländer hat Deutschland?",
-          "Antworten": [
-            "14",
-            "15",
-            "16",
-            "17"
-          ],
-          "KorrekteAntwort": 2
-        },
-        {
-          "Frage": "Was ist die Hauptstadt von Frankreich?",
-          "Antworten": [
-            "Marseille",
-            "Lyon",
-            "Paris",
-            "Nizza"
-          ],
-          "KorrekteAntwort": 2
-        }
-      ]
-    },
-    {
-      "Name": "Geographie",
-      "Fragen": [
-        {
-          "Frage": "Welcher Fluss fließt durch Paris?",
-          "Antworten": [
-            "Rhein",
-            "Donau",
-            "Seine",
-            "Elbe"
-          ],
-          "KorrekteAntwort": 2
-        },
-        {
-          "Frage": "Was ist die größte Sandwüste der Welt?",
-          "Antworten": [
-            "Sahara",
-            "Rub al-Khali",
-            "Antarktis",
-            "Arabische Wüste"
-          ],
-          "KorrekteAntwort": 1
-        },
-        {
-          "Frage": "Welches Land ist am größten nach Fläche?",
-          "Antworten": [
-            "USA",
-            "China",
-            "Russland",
-            "Kanada"
-          ],
-          "KorrekteAntwort": 2
-        }
-      ]
-    },
-    {
-      "Name": "Fussball",
-      "Fragen": [
-        {
-          "Frage": "Welches Land gewann die Fußball-Weltmeisterschaft 2014?",
-          "Antworten": [
-            "Brasilien",
-            "Deutschland",
-            "Argentinien",
-            "Spanien"
-          ],
-          "KorrekteAntwort": 1
-        },
-        {
-          "Frage": "Welcher Spieler hat die meisten Tore in der Geschichte der Weltmeisterschaften erzielt?",
-          "Antworten": [
-            "Pelé",
-            "Miroslav Klose",
-            "Ronaldo",
-            "Lionel Messi"
-          ],
-          "KorrekteAntwort": 1
-        },
-        {
-          "Frage": "Welcher Club hat die meisten UEFA Champions League Titel gewonnen?",
-          "Antworten": [
-            "FC Barcelona",
-            "AC Mailand",
-            "Liverpool FC",
-            "Real Madrid"
-          ],
-          "KorrekteAntwort": 3
-        }
-      ]
-    }
-  ]
+  {
+    "Name": "Java",
+    "Fragen": [
+      {
+        "Frage": "Was ist eine Klasse in Java?",
+        "Antworten": [
+          "Eine Variable",
+          "Eine Funktion",
+          "Ein Datencontainer",
+          "Ein Operator"
+        ],
+        "KorrekteAntwort": 2
+      },
+      {
+        "Frage": "Was bedeutet API in Java?",
+        "Antworten": [
+          "Application Performance Index",
+          "Application Programming Interface",
+          "Application Protocol Implementation",
+          "Automatic Programming Input"
+        ],
+        "KorrekteAntwort": 1
+      },
+      {
+        "Frage": "Was ist ein Paket in Java?",
+        "Antworten": [
+          "Eine Klassensammlung",
+          "Ein Datentyp",
+          "Ein Fehlercode",
+          "Ein Compiler"
+        ],
+        "KorrekteAntwort": 0
+      },
+      {
+        "Frage": "Was ist der Standardwert einer lokalen Variablen in Java?",
+        "Antworten": [
+          "0",
+          "null",
+          "False",
+          "Nicht definiert"
+        ],
+        "KorrekteAntwort": 3
+      },
+      {
+        "Frage": "Was ist der Zweck des `final` Schlüsselworts in Java?",
+        "Antworten": [
+          "Endgültige Methode",
+          "Variable ändern",
+          "Verhindert Vererbung",
+          "Erstellt Konstanten"
+        ],
+        "KorrekteAntwort": 3
+      },
+      {
+        "Frage": "Was ist ein Array in Java?",
+        "Antworten": [
+          "Ein Datentyp",
+          "Ein Objekt",
+          "Eine Sammlung von Variablen",
+          "Ein Fehler"
+        ],
+        "KorrekteAntwort": 2
+      },
+      {
+        "Frage": "Was bedeutet `static` in Java?",
+        "Antworten": [
+          "Veränderbar",
+          "Unveränderlich",
+          "Klassenlevel",
+          "Objektlevel"
+        ],
+        "KorrekteAntwort": 2
+      },
+      {
+        "Frage": "Was ist eine abstrakte Klasse in Java?",
+        "Antworten": [
+          "Kann nicht instanziiert werden",
+          "Speichert Daten",
+          "Ist immer final",
+          "Kann nur statische Methoden enthalten"
+        ],
+        "KorrekteAntwort": 0
+      },
+      {
+        "Frage": "Was bedeutet `public` in Java?",
+        "Antworten": [
+          "Nur innerhalb der Klasse zugänglich",
+          "Überall zugänglich",
+          "Nur im selben Paket zugänglich",
+          "Nicht zugänglich"
+        ],
+        "KorrekteAntwort": 1
+      },
+      {
+        "Frage": "Was ist ein Konstruktor in Java?",
+        "Antworten": [
+          "Ähnlich wie eine Methode",
+          "Initialisiert ein Objekt",
+          "Rückgabetyp erforderlich",
+          "Kann überladen werden"
+        ],
+        "KorrekteAntwort": 1
+      }
+    ]
+  },
+  {
+    "Name": "Allgemeinbildung",
+    "Fragen": [
+      {
+        "Frage": "Wer malte die Mona Lisa?",
+        "Antworten": [
+          "Vincent van Gogh",
+          "Leonardo da Vinci",
+          "Pablo Picasso",
+          "Claude Monet"
+        ],
+        "KorrekteAntwort": 1
+      },
+      {
+        "Frage": "Was ist das chemische Symbol für Wasser?",
+        "Antworten": [
+          "O2",
+          "H2O",
+          "CO2",
+          "NaCl"
+        ],
+        "KorrekteAntwort": 1
+      },
+      {
+        "Frage": "Wie viele Kontinente gibt es?",
+        "Antworten": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "KorrekteAntwort": 2
+      },
+      {
+        "Frage": "Wer ist der Autor von '1984'?",
+        "Antworten": [
+          "George Orwell",
+          "Aldous Huxley",
+          "J.R.R. Tolkien",
+          "Stephen King"
+        ],
+        "KorrekteAntwort": 0
+      },
+      {
+        "Frage": "Was ist die Hauptstadt von Japan?",
+        "Antworten": [
+          "Seoul",
+          "Beijing",
+          "Tokyo",
+          "Bangkok"
+        ],
+        "KorrekteAntwort": 2
+      },
+      {
+        "Frage": "Wie viele Elemente gibt es im Periodensystem?",
+        "Antworten": [
+          "102",
+          "118",
+          "120",
+          "92"
+        ],
+        "KorrekteAntwort": 1
+      },
+      {
+        "Frage": "Was ist die schnellste Landtierart?",
+        "Antworten": [
+          "Löwe",
+          "Gepard",
+          "Falke",
+          "Hase"
+        ],
+        "KorrekteAntwort": 1
+      },
+      {
+        "Frage": "Wie viele Zähne hat ein erwachsener Mensch normalerweise?",
+        "Antworten": [
+          "28",
+          "30",
+          "32",
+          "34"
+        ],
+        "KorrekteAntwort": 2
+      },
+      {
+        "Frage": "In welchem Jahr landete der erste Mensch auf dem Mond?",
+        "Antworten": [
+          "1969",
+          "1972",
+          "1965",
+          "1970"
+        ],
+        "KorrekteAntwort": 0
+      },
+      {
+        "Frage": "Was ist die tiefste Stelle der Weltmeere?",
+        "Antworten": [
+          "Marianengraben",
+          "Tonga-Graben",
+          "Philippinengraben",
+          "Südsandwichgraben"
+        ],
+        "KorrekteAntwort": 0
+      }
+    ]
+  },
+  {
+    "Name": "Geographie",
+    "Fragen": [
+      {
+        "Frage": "Welche Stadt ist die Hauptstadt von Australien?",
+        "Antworten": [
+          "Sydney",
+          "Melbourne",
+          "Canberra",
+          "Perth"
+        ],
+        "KorrekteAntwort": 2
+      },
+      {
+        "Frage": "Welcher ist der längste Fluss der Welt?",
+        "Antworten": [
+          "Nil",
+          "Amazonas",
+          "Jangtse",
+          "Mississippi"
+        ],
+        "KorrekteAntwort": 1
+      },
+      {
+        "Frage": "Welches Land hat die meisten Einwohner?",
+        "Antworten": [
+          "Indien",
+          "China",
+          "USA",
+          "Indonesien"
+        ],
+        "KorrekteAntwort": 1
+      },
+      {
+        "Frage": "Was ist die Hauptstadt von Kanada?",
+        "Antworten": [
+          "Toronto",
+          "Ottawa",
+          "Montreal",
+          "Vancouver"
+        ],
+        "KorrekteAntwort": 1
+      },
+      {
+        "Frage": "Welches Land liegt nicht in Afrika?",
+        "Antworten": [
+          "Ägypten",
+          "Indien",
+          "Nigeria",
+          "Kenia"
+        ],
+        "KorrekteAntwort": 1
+      },
+      {
+        "Frage": "Welches Meer liegt zwischen Italien und den Balkanstaaten?",
+        "Antworten": [
+          "Schwarzes Meer",
+          "Adriatisches Meer",
+          "Mittelmeer",
+          "Ägäisches Meer"
+        ],
+        "KorrekteAntwort": 1
+      },
+      {
+        "Frage": "Welcher Berg ist der höchste der Welt?",
+        "Antworten": [
+          "Mount Everest",
+          "K2",
+          "Kangchenjunga",
+          "Lhotse"
+        ],
+        "KorrekteAntwort": 0
+      },
+      {
+        "Frage": "Welcher Kontinent ist der trockenste?",
+        "Antworten": [
+          "Antarktika",
+          "Afrika",
+          "Australien",
+          "Nordamerika"
+        ],
+        "KorrekteAntwort": 0
+      },
+      {
+        "Frage": "Welches Land ist von drei Ozeanen umgeben?",
+        "Antworten": [
+          "USA",
+          "Russland",
+          "Australien",
+          "Indien"
+        ],
+        "KorrekteAntwort": 2
+      },
+      {
+        "Frage": "Welches Land hat die längste Küstenlinie?",
+        "Antworten": [
+          "USA",
+          "Kanada",
+          "Russland",
+          "China"
+        ],
+        "KorrekteAntwort": 1
+      }
+    ]
+  },
+  {
+    "Name": "Fußball",
+    "Fragen": [
+      {
+        "Frage": "Wer ist der Rekordtorschütze der deutschen Nationalmannschaft?",
+        "Antworten": [
+          "Gerd Müller",
+          "Miroslav Klose",
+          "Thomas Müller",
+          "Lukas Podolski"
+        ],
+        "KorrekteAntwort": 1
+      },
+      {
+        "Frage": "In welchem Jahr fand die erste Fußball-Weltmeisterschaft statt?",
+        "Antworten": [
+          "1930",
+          "1950",
+          "1966",
+          "1974"
+        ],
+        "KorrekteAntwort": 0
+      },
+      {
+        "Frage": "Welches Team hat die meisten Premier League Titel gewonnen?",
+        "Antworten": [
+          "Chelsea",
+          "Manchester United",
+          "Arsenal",
+          "Liverpool"
+        ],
+        "KorrekteAntwort": 1
+      },
+      {
+        "Frage": "Wie viele Spieler hat eine Fußballmannschaft auf dem Spielfeld?",
+        "Antworten": [
+          "11",
+          "10",
+          "12",
+          "9"
+        ],
+        "KorrekteAntwort": 0
+      },
+      {
+        "Frage": "Wer gewann den Ballon d'Or 2020?",
+        "Antworten": [
+          "Lionel Messi",
+          "Cristiano Ronaldo",
+          "Robert Lewandowski",
+          "Nicht verliehen"
+        ],
+        "KorrekteAntwort": 3
+      },
+      {
+        "Frage": "Welches Land war Gastgeber der FIFA-Weltmeisterschaft 2018?",
+        "Antworten": [
+          "Brasilien",
+          "Russland",
+          "Südafrika",
+          "Deutschland"
+        ],
+        "KorrekteAntwort": 1
+      },
+      {
+        "Frage": "Welcher Spieler erzielte das schnellste Tor in der Bundesliga?",
+        "Antworten": [
+          "Karim Bellarabi",
+          "Giovane Élber",
+          "Kevin Volland",
+          "Robert Lewandowski"
+        ],
+        "KorrekteAntwort": 0
+      },
+      {
+        "Frage": "Welches Land gewann die Europameisterschaft 2016?",
+        "Antworten": [
+          "Frankreich",
+          "Portugal",
+          "Deutschland",
+          "Spanien"
+        ],
+        "KorrekteAntwort": 1
+      },
+      {
+        "Frage": "Wer ist der teuerste Fußballspieler aller Zeiten?",
+        "Antworten": [
+          "Neymar Jr.",
+          "Kylian Mbappé",
+          "Philippe Coutinho",
+          "João Félix"
+        ],
+        "KorrekteAntwort": 0
+      },
+      {
+        "Frage": "Welcher Club gewann die erste Champions League?",
+        "Antworten": [
+          "Real Madrid",
+          "AC Mailand",
+          "FC Barcelona",
+          "Manchester United"
+        ],
+        "KorrekteAntwort": 0
+      }
+    ]
+  }
+]

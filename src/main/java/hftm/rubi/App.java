@@ -8,11 +8,20 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import java.io.IOException;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class App extends Application {
 
     private static Scene scene;
     private static Kategorie ausgewaehlteKategorie; // Hinzugefügte Variable für die ausgewählte Kategorie
+    private static String benutzerName;
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -49,7 +58,32 @@ public class App extends Application {
         ausgewaehlteKategorie = kategorie;
     }
 
+    public static void setBenutzerName(String name) {
+        benutzerName = name;
+    }    
+
+    public static String getBenutzerName() {
+        return benutzerName;
+    }
+
+    public static void speichereErgebnisse(String name, int punkte) {
+        try (FileWriter fw = new FileWriter("ergebnisse.txt", true);
+             BufferedWriter bw = new BufferedWriter(fw);
+             PrintWriter out = new PrintWriter(bw)) {
+            out.println(name + "," + punkte); // Speichert den Namen und die Punkte getrennt durch ein Komma
+        } catch (IOException e) {
+            System.err.println("Ein Fehler ist aufgetreten beim Speichern der Ergebnisse: " + e.getMessage());
+        }
+    }
+
+        public static List<String> ladeErgebnisse() throws IOException {
+        return Files.lines(Paths.get("ergebnisse.txt"))
+                    .sorted(Comparator.comparingInt(line -> -Integer.parseInt(line.split(",")[1])))
+                    .collect(Collectors.toList());
+    }
+
     public static void main(String[] args) {
         launch();
     }
+
 }

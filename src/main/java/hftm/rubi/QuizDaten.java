@@ -6,6 +6,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -17,6 +18,7 @@ public class QuizDaten {
     public QuizDaten() {
         this.kategorien = new ArrayList<>();
         ladeDaten();
+        waehleZufaelligeFragenProKategorie(5);
     }
 
 private void ladeDaten() {
@@ -54,6 +56,15 @@ private void ladeDaten() {
         e.printStackTrace();
     }
 }
+
+public void waehleZufaelligeFragenProKategorie(int anzahlFragenProKategorie) {
+        for (Kategorie kategorie : kategorien) {
+            Collections.shuffle(kategorie.getFragen()); // Mische die Fragenliste
+            if (kategorie.getFragen().size() > anzahlFragenProKategorie) {
+                kategorie.setFragen(new ArrayList<>(kategorie.getFragen().subList(0, anzahlFragenProKategorie)));
+            }
+        }
+    }
 
 
     public void druckeQuizDaten() {

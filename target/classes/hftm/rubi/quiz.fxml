@@ -11,7 +11,7 @@
    fx:controller="hftm.rubi.QuizController">
    <children>
       <Label fx:id="frageLabel" layoutX="50.0" layoutY="50" text="Frage kommt hier" wrapText="true"
-         maxWidth="560">
+         maxWidth="480">
          <font>
             <Font name="Arial" size="24.0" />
          </font>
