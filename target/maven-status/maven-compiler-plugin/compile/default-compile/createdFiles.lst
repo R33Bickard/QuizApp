@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-module-info.class
-hftm\rubi\QuizDaten.class
-hftm\rubi\ErgebnisController.class
-hftm\rubi\QuizController.class
-hftm\rubi\QuizDaten$Kategorie.class
-hftm\rubi\App.class
-hftm\rubi\FragenController.class
-hftm\rubi\QuizDaten$Frage.class
-=======
 hftm\rubi\Frage.class
 hftm\rubi\QuizDatenTest.class
 hftm\rubi\QuizDaten.class
@@ -17,4 +7,3 @@ module-info.class
 hftm\rubi\QuizController.class
 hftm\rubi\App.class
 hftm\rubi\FragenController.class
->>>>>>> c165979 (Kategorieauswahl und Fragenausgabe implementiert)

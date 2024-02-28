@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-C:\QuizzApp\QuizApp\src\main\java\hftm\rubi\QuizDaten.java
-C:\QuizzApp\QuizApp\src\main\java\hftm\rubi\ErgebnisController.java
-C:\QuizzApp\QuizApp\src\main\java\hftm\rubi\App.java
-C:\QuizzApp\QuizApp\src\main\java\hftm\rubi\FragenController.java
-C:\QuizzApp\QuizApp\src\main\java\hftm\rubi\QuizController.java
-C:\QuizzApp\QuizApp\src\main\java\module-info.java
-=======
 C:\Users\yanic\Downloads\QuizApp\QuizApp\src\main\java\hftm\rubi\QuizController.java
 C:\Users\yanic\Downloads\QuizApp\QuizApp\src\main\java\hftm\rubi\App.java
 C:\Users\yanic\Downloads\QuizApp\QuizApp\src\main\java\hftm\rubi\QuizDaten.java
@@ -15,4 +7,3 @@ C:\Users\yanic\Downloads\QuizApp\QuizApp\src\main\java\hftm\rubi\ErgebnisControl
 C:\Users\yanic\Downloads\QuizApp\QuizApp\src\main\java\hftm\rubi\FragenController.java
 C:\Users\yanic\Downloads\QuizApp\QuizApp\src\main\java\module-info.java
 C:\Users\yanic\Downloads\QuizApp\QuizApp\src\main\java\hftm\rubi\Frage.java
->>>>>>> c165979 (Kategorieauswahl und Fragenausgabe implementiert)

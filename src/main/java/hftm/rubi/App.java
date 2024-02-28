@@ -23,15 +23,22 @@ public class App extends Application {
         stage.show();
     }
 
-    static void setRoot(String fxml) throws IOException {
+    static void setRoot(String fxml, int korrekteAntworten, int gesamtFragen) throws IOException {
         FXMLLoader loader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
         scene.setRoot(loader.load());
+    
         if ("quiz".equals(fxml)) {
-            // Zugriff auf den QuizController und Übertragung der ausgewählten Kategorie
             QuizController controller = loader.getController();
             controller.setKategorie(ausgewaehlteKategorie);
+        } else if ("ergebnis".equals(fxml)) {
+            ErgebnisController ergebnisController = loader.getController();
+            ergebnisController.setErgebnisse(korrekteAntworten, gesamtFragen);
         }
     }
+
+    static void setRoot(String fxml) throws IOException {
+        setRoot(fxml, 0, 0);
+    }  
 
     private static Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));

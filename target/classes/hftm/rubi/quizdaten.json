@@ -1,0 +1,142 @@
+[
+    {
+      "Name": "Java",
+      "Fragen": [
+        {
+          "Frage": "Was ist Java?",
+          "Antworten": [
+            "Eine Insel",
+            "Eine Programmiersprache",
+            "Ein Getränk",
+            "Ein Betriebssystem"
+          ],
+          "KorrekteAntwort": 1
+        },
+        {
+          "Frage": "Was bedeutet OOP?",
+          "Antworten": [
+            "Objektorientierte Programmierung",
+            "Offen Organisierte Projekte",
+            "Optionale Operationsprozedur",
+            "Offizielle Öffentliche Partnerschaft"
+          ],
+          "KorrekteAntwort": 0
+        },
+        {
+          "Frage": "Was ist eine Ausnahme in Java?",
+          "Antworten": [
+            "Ein Fehler beim Kompilieren",
+            "Ein Laufzeitfehler",
+            "Ein Syntaxfehler",
+            "Ein Kommentar"
+          ],
+          "KorrekteAntwort": 1
+        }
+      ]
+    },
+    {
+      "Name": "Allgemeinbildung",
+      "Fragen": [
+        {
+          "Frage": "Wer schrieb 'Faust'?",
+          "Antworten": [
+            "Friedrich Schiller",
+            "Johann Wolfgang von Goethe",
+            "Heinrich Heine",
+            "Thomas Mann"
+          ],
+          "KorrekteAntwort": 1
+        },
+        {
+          "Frage": "Wie viele Bundesländer hat Deutschland?",
+          "Antworten": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "KorrekteAntwort": 2
+        },
+        {
+          "Frage": "Was ist die Hauptstadt von Frankreich?",
+          "Antworten": [
+            "Marseille",
+            "Lyon",
+            "Paris",
+            "Nizza"
+          ],
+          "KorrekteAntwort": 2
+        }
+      ]
+    },
+    {
+      "Name": "Geographie",
+      "Fragen": [
+        {
+          "Frage": "Welcher Fluss fließt durch Paris?",
+          "Antworten": [
+            "Rhein",
+            "Donau",
+            "Seine",
+            "Elbe"
+          ],
+          "KorrekteAntwort": 2
+        },
+        {
+          "Frage": "Was ist die größte Wüste der Welt?",
+          "Antworten": [
+            "Sahara",
+            "Gobi",
+            "Antarktis",
+            "Arabische Wüste"
+          ],
+          "KorrekteAntwort": 2
+        },
+        {
+          "Frage": "Welches Land ist am größten nach Fläche?",
+          "Antworten": [
+            "USA",
+            "China",
+            "Russland",
+            "Kanada"
+          ],
+          "KorrekteAntwort": 2
+        }
+      ]
+    },
+    {
+      "Name": "Fussball",
+      "Fragen": [
+        {
+          "Frage": "Welches Land gewann die Fußball-Weltmeisterschaft 2014?",
+          "Antworten": [
+            "Brasilien",
+            "Deutschland",
+            "Argentinien",
+            "Spanien"
+          ],
+          "KorrekteAntwort": 1
+        },
+        {
+          "Frage": "Welcher Spieler hat die meisten Tore in der Geschichte der Weltmeisterschaften erzielt?",
+          "Antworten": [
+            "Pelé",
+            "Miroslav Klose",
+            "Ronaldo",
+            "Lionel Messi"
+          ],
+          "KorrekteAntwort": 1
+        },
+        {
+          "Frage": "Welcher Club hat die meisten UEFA Champions League Titel gewonnen?",
+          "Antworten": [
+            "FC Barcelona",
+            "AC Mailand",
+            "Liverpool FC",
+            "Real Madrid"
+          ],
+          "KorrekteAntwort": 3
+        }
+      ]
+    }
+  ]
