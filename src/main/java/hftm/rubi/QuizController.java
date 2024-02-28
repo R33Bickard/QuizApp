@@ -24,8 +24,8 @@ public class QuizController {
     private Button Auswahl3;
     @FXML
     private Button Auswahl4;
-    @FXML
-    private Button ErgebnisButton;
+    //@FXML
+   // private Button ErgebnisButton;
 
     private Kategorie ausgewaehlteKategorie;
     private List<Frage> fragen;

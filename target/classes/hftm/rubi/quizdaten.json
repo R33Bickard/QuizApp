@@ -83,14 +83,14 @@
           "KorrekteAntwort": 2
         },
         {
-          "Frage": "Was ist die größte Wüste der Welt?",
+          "Frage": "Was ist die größte Sandwüste der Welt?",
           "Antworten": [
             "Sahara",
-            "Gobi",
+            "Rub al-Khali",
             "Antarktis",
             "Arabische Wüste"
           ],
-          "KorrekteAntwort": 2
+          "KorrekteAntwort": 1
         },
         {
           "Frage": "Welches Land ist am größten nach Fläche?",

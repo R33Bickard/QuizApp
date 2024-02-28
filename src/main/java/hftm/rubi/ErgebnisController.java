@@ -18,7 +18,7 @@ public class ErgebnisController {
 
     @FXML
     private void switchToPrimary() throws IOException {
-        App.setRoot("fragen");
+        App.setRoot("login");
     }
 
     @FXML

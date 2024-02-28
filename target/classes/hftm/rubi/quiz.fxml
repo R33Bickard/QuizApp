@@ -10,49 +10,49 @@
    xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
    fx:controller="hftm.rubi.QuizController">
    <children>
-      <Label fx:id="frageLabel" layoutX="20.0" layoutY="50" text="Frage kommt hier" wrapText="true"
+      <Label fx:id="frageLabel" layoutX="50.0" layoutY="50" text="Frage kommt hier" wrapText="true"
          maxWidth="560">
          <font>
             <Font name="Arial" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="Auswahl1" layoutX="20.0" layoutY="150.0" text="Auswahl1"
+      <Button fx:id="Auswahl1" layoutX="50.0" layoutY="150.0" text="Auswahl1"
          onAction="#antwortAuswaehlen"
          style="-fx-background-color:#6495ED; -fx-background-radius: 32px; -fx-border-radius: 32px;"
          textFill="WHITE"
-         minWidth="200" minHeight="50" maxWidth="200" maxHeight="50" wrapText="true">
+         minWidth="230" minHeight="50" maxWidth="200" wrapText="true">
          <font>
-            <Font name="Arial" size="16.0" />
+            <Font name="Arial" size="16"/>
          </font>
       </Button>
       <Button fx:id="Auswahl2" layoutX="330.0" layoutY="150.0" text="Auswahl2"
          onAction="#antwortAuswaehlen"
          style="-fx-background-color: #6495ED; -fx-background-radius: 32px; -fx-border-radius: 32px;"
          textFill="WHITE"
-         minWidth="200" minHeight="50" maxWidth="200" maxHeight="50" wrapText="true">
+         minWidth="230" minHeight="50" maxWidth="200" wrapText="true">
          <font>
-            <Font name="Arial" size="16.0" />
+            <Font name="Arial" size="16"/>
          </font>
       </Button>
-      <Button fx:id="Auswahl3" layoutX="20.0" layoutY="250.0" text="Auswahl3"
+      <Button fx:id="Auswahl3" layoutX="50.0" layoutY="250.0" text="Auswahl3"
          onAction="#antwortAuswaehlen"
          style="-fx-background-color: #6495ED; -fx-background-radius: 32px; -fx-border-radius: 32px;"
          textFill="WHITE"
-         minWidth="200" minHeight="50" maxWidth="200" maxHeight="50" wrapText="true">
+         minWidth="230" minHeight="50" maxWidth="200" wrapText="true">
          <font>
-            <Font name="Arial" />
+            <Font name="Arial" size="16"/>
          </font>
       </Button>
       <Button fx:id="Auswahl4" layoutX="330.0" layoutY="250.0" text="Auswahl4"
          onAction="#antwortAuswaehlen"
          style="-fx-background-color: #6495ED; -fx-background-radius: 32px; -fx-border-radius: 32px;"
          textFill="WHITE"
-         minWidth="200" minHeight="50" maxWidth="200" maxHeight="50" wrapText="true">
+         minWidth="230" minHeight="50" maxWidth="200" wrapText="true">
          <font>
-            <Font name="Arial" />
+            <Font name="Arial" size="16"/>
          </font>
       </Button>
-      <Button fx:id="ErgebnisButton" layoutX="310.0" layoutY="350.0" text="Ergebnisse"
+      <!-- <Button fx:id="ErgebnisButton" layoutX="310.0" layoutY="350.0" text="Ergebnisse"
          onAction="#switchToThird"
          style="-fx-background-color: #ADFF2F; -fx-background-radius: 32px; -fx-border-radius: 32px;"
          textFill="WHITE"
@@ -60,7 +60,7 @@
          <font>
             <Font name="Arial" size="20.0" />
          </font>
-      </Button>
+      </Button>  -->
       <Button fx:id="exitButton" layoutX="460.0" layoutY="350.0" text="Beenden"
          onAction="#handleExitButtonAction"
          style="-fx-background-color:#B22222; -fx-background-radius: 32px;; -fx-border-radius: 32px;"

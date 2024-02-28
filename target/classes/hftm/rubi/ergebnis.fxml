@@ -9,7 +9,7 @@
     xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
     fx:controller="hftm.rubi.ErgebnisController">
     <children>
-        <Label fx:id="ergebnisLabel" layoutX="100" layoutY="100" prefWidth="400" prefHeight="50"
+        <Label fx:id="ergebnisLabel" layoutX="95" layoutY="40" prefWidth="400" prefHeight="50"
             text="Deine Ergebnisse werden hier angezeigt" wrapText="true">
             <font>
                 <Font name="Arial" size="20.0" />
