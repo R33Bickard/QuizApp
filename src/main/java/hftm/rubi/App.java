@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 public class App extends Application {
 
     private static Scene scene;
-    private static Kategorie ausgewaehlteKategorie; // Hinzugefügte Variable für die ausgewählte Kategorie
+    private static Kategorie ausgewaehlteKategorie;
     private static String benutzerName;
 
     @Override
@@ -70,7 +70,7 @@ public class App extends Application {
         try (FileWriter fw = new FileWriter("ergebnisse.txt", true);
              BufferedWriter bw = new BufferedWriter(fw);
              PrintWriter out = new PrintWriter(bw)) {
-            out.println(name + "," + punkte); // Speichert den Namen und die Punkte getrennt durch ein Komma
+            out.println(name + "," + punkte);
         } catch (IOException e) {
             System.err.println("Ein Fehler ist aufgetreten beim Speichern der Ergebnisse: " + e.getMessage());
         }

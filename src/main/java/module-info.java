@@ -3,6 +3,6 @@ module hftm.rubi {
     requires javafx.fxml;
     requires org.json;
 
-    opens hftm.rubi to javafx.fxml, org.json;
+    opens hftm.rubi to javafx.fxml, org.json, junit;
     exports hftm.rubi;
 }

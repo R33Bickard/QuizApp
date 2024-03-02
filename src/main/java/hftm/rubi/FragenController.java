@@ -32,7 +32,7 @@ public class FragenController {
                 Kategorie ausgewaehlteKategorie = kategorien.get(i);
                 kategorieButtons[i].setOnAction(event -> waehleKategorie(ausgewaehlteKategorie));
             } else {
-                kategorieButtons[i].setVisible(false); // Verstecke den Button, wenn keine Kategorie vorhanden ist
+                kategorieButtons[i].setVisible(false);
             }
         }
     }

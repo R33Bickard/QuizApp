@@ -39,12 +39,12 @@ public class ErgebnisController {
     
 
     public void setErgebnisse(int korrekteAntworten, int gesamtFragen) {
-        nameLabel.setText("Spieler: " + App.getBenutzerName()); // Annahme, dass du eine Getter-Methode in App hinzufügst
+        nameLabel.setText("Spieler: " + App.getBenutzerName());
         ergebnisLabel.setText("Du hast " + korrekteAntworten + " von " + gesamtFragen + " Fragen richtig beantwortet!");
     }
 
     public void setBenutzerName(String name) {
-        // Setze den Namen im Label oder wo immer es benötigt wird
+        
     }    
 
     @FXML

@@ -1,0 +1,4 @@
+--patch-module
+hftm.rubi=_
+--add-reads
+hftm.rubi=ALL-UNNAMED

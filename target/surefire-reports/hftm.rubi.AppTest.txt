@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: hftm.rubi.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.056 s <<< FAILURE! - in hftm.rubi.AppTest
+hftm.rubi.AppTest.testSpeichereUndLadeErgebnisse  Time elapsed: 0.035 s  <<< ERROR!
+java.lang.NumberFormatException: For input string: "8Yanick"
+	at hftm.rubi.AppTest.testSpeichereUndLadeErgebnisse(AppTest.java:18)
+

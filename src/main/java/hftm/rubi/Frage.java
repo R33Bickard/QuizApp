@@ -13,7 +13,6 @@ public class Frage {
         this.korrekteAntwortIndex = korrekteAntwortIndex;
     }
 
-    // Getter und Setter
     public String getFragetext() {
         return fragetext;
     }
