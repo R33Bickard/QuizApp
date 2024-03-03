@@ -6,7 +6,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
  
-<AnchorPane prefHeight="400" prefWidth="600" style="-fx-background-color: white; -fx-background-radius: 32px; -fx-border-radius: 32px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hftm.rubi.ErgebnisController">
+<AnchorPane prefHeight="400" prefWidth="600" style="-fx-background-color: white; -fx-background-radius: 32px; -fx-border-radius: 32px;"
+xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hftm.rubi.ErgebnisController">
     <children>
       <Label fx:id="nameLabel" layoutX="246.0" layoutY="22.0" text="Spieler">
          <font>

@@ -7,7 +7,7 @@
 
 <AnchorPane prefHeight="400" prefWidth="600"
    style="-fx-background-color: white; -fx-background-radius: 32px; -fx-border-radius: 32px;"
-   xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+   xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
    fx:controller="hftm.rubi.QuizController">
    <children>
       <Label fx:id="frageLabel" layoutX="50.0" layoutY="50" text="Frage kommt hier" wrapText="true"
